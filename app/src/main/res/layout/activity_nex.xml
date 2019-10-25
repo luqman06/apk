@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/mtk"
+    android:layout_height="match_parent"
+    tools:context=".nex">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perbandingan Angka"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/abu2"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/cek1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back" />
+
+        <ImageButton
+            android:id="@+id/tbl2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/paly" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/cek1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:hint="masukan angka"
+        android:background="@color/putih"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/cek2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:hint="masukan angka"
+        android:inputType="numberDecimal"
+        android:background="@color/putih"
+        app:layout_constraintTop_toBottomOf="@+id/cek1"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+
+    <TextView
+        android:id="@+id/hasilnex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:textSize="35dp"
+        android:background="@color/putih"
+        app:layout_constraintTop_toBottomOf="@+id/cek2"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

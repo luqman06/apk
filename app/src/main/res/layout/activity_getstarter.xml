@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/laut"
+    android:id="@+id/r1"
+    android:backgroundTintMode="screen"
+    tools:context=".getstarter">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:background="#2196F3"
+        android:text="Halo Selamat Datang"
+        android:textAlignment="center"
+        android:textSize="34dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/we"
+        android:layout_width="21dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="1dp"
+        />
+
+    <ScrollView
+        android:layout_width="419dp"
+        android:layout_height="417dp"
+        android:layout_marginStart="-8dp"
+
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageButton
+                android:id="@+id/gengan"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mtk1" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="24dp"
+                android:text="Genap Ganji"
+                android:textAlignment="center" />
+
+            <ImageButton
+                android:id="@+id/banding"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mtk2" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Lebih Besarmana"
+                android:textAlignment="center" />
+
+            <ImageButton
+                android:id="@+id/kerucut"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kerucut" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Volume Kerucut"
+                android:textAlignment="center" />
+
+
+            <ImageButton
+                android:id="@+id/kpkfpb"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mtk5" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="KPK dan FPB"
+                android:textAlignment="center" />
+
+            <ImageButton
+                android:id="@+id/draw"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/drawd" />
+
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="25dp"
+                android:text="Mengambar"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <!--    <Button-->
+<!--        android:id="@+id/tbl_latihan1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="176dp"-->
+<!--        android:text="Pekan1"-->
+<!--        android:textSize="18dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/imageView2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.978"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+
+</RelativeLayout>
